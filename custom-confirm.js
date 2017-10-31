@@ -112,7 +112,7 @@
             body: 'Are you sure ?',
             btn_yes: 'confirm',
             btn_no: 'cancel',
-            btn_close: 'close',
+            btn_close: '',
             has_overlay: true
         };
 

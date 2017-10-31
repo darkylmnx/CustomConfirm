@@ -46,7 +46,7 @@ Here's the full list of the available options :
 - `body (String) (default: 'Are you sure ?')` : To set the **Body** text
 - `btn_yes (String) (default: 'confirm')` : To set the **Confirm button** text
 - `btn_no (String) (default: 'cancel')` : To set the **Cancel button** text
-- `btn_close (String) (default: 'close')` : To set the **Close button** text
+- `btn_close (String) (default: '')` : To set the **Close button** text
 - `has_overlay (String) (default: true)` : To set whether to have an **overlay** markup or not
 - `targets (String | Element | Array | NodeList) (default: undefined)` : To set a **selector** or DOM element(s) 
 
