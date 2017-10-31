@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Confirm</title>
+    <link rel="stylesheet" href="custom-confirm.css">
+</head>
+<body>
+
+    <h1>Demo of "CustomConfirm" aka C2 Lib</h1>
+
+    <ul>
+        <li>I'm going to google <a href="https://google.com">go</a></li>
+        <li>I'm going to yahoo <a href="https://yahoo.com">go</a></li>
+        <li>An amazing &amp; imporant thing 3 <button>delete</button></li>
+        <li>An amazing &amp; imporant thing 4 <button>delete</button></li>
+        <li>An amazing &amp; imporant thing 5 <button>delete</button></li>
+        <li>An amazing &amp; imporant thing 6 <button>delete</button></li>
+    </ul>
+
+    <script src="custom-confirm.js"></script>
+    <script>
+        CustomConfirm('a', function (confirmed, element) {
+            if (confirmed) {
+                // do what you want (play with target element, ajax...)
+                location.href = element.href;
+            } else {
+                // do something or... nothing, if you want to
+            }
+        });
+
+        CustomConfirm('button', function (confirmed, element) {
+            // play with the target element or anything else
+            if (confirmed) {
+                element.parentNode.remove();
+            } else {
+                var p = document.createElement('p');
+                p.innerHTML = 'A Wise decision has been made for LI <strong>' + element.previousSibling.textContent + '</strong>';
+                element.parentNode.parentNode.appendChild(p);
+            }
+        });
+    </script>
+</body>
+</html>
