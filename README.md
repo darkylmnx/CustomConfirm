@@ -1,6 +1,6 @@
-# CustomConfirm aka C2 : This is an amazin library !
+# CustomConfirm aka C2 : This is an amazing library !
 
-This library was made for people with this feeling : **window.confirm** is ungly !
+This library was made for people with this feeling : `window.confirm(...)` is ungly !
 
 If you need to add a **confirm dialog** to your web site / web app that is beautiful or, at least easily themable,
 you are on the right repo !
@@ -34,9 +34,12 @@ CustomConfirm(function (confirmed) {
 });
 ```
 
+- `confirmed (Boolean)` : as the name says it, it contains whether the user confirmed or not.
+- `target_element (Element)` : represents the element that was clicked and that triggered the dialog (check the demo page). 
+
 ### API options
 
-**C2** is developer-friendly, you can overide the default texts by passing options.
+**C2** is developer-friendly, you can override the default texts by passing options.
 
 Here's the full list of the available options :
 - `title (String) (default: 'Confirm dialog')` : To set the **Title** text
@@ -68,15 +71,15 @@ CustomConfirm({
 ## Easily themable
 
  **C2** has a simple markup with some ready-to-use classes. To customize your dialog you can use the following classes :
-- `c2_content` : For the main content box (the white box, check the default theme)
-- `c2_header` : For the header (contains the title and close markup)
-- `c2_title` : For the title
-- `c2_btn-close` : For the close button
-- `c2_body` : For the the inner content (where your confirmation message appears)
-- `c2_footer` : For the footer (contains confirm and cancel button)
-- `c2_btn-no` : For the cancel button
-- `c2_btn-yes` : For the confirm button
-- `c2_overlay` : For the overlay
+- `.c2_content` : For the main content box (the white box, check the default theme)
+- `.c2_header` : For the header (contains the title and close markup)
+- `.c2_title` : For the title
+- `.c2_btn-close` : For the close button
+- `.c2_body` : For the the inner content (where your confirmation message appears)
+- `.c2_footer` : For the footer (contains confirm and cancel button)
+- `.c2_btn-no` : For the cancel button
+- `.c2_btn-yes` : For the confirm button
+- `.c2_overlay` : For the overlay
 
 ## Contribute
 
