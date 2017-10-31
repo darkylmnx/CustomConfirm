@@ -143,7 +143,6 @@
         if (! template) {
             template = document.createElement('DIV');
             template.className = 'c2';
-            template.style.zIndex = '9999';
             template.innerHTML = '<div class="c2_content"> <header class="c2_header"> <h2 class="c2_title"></h2> <button class="c2_btn-close"></button> </header> <div class="c2_body"> </div><footer class="c2_footer"> <button class="c2_btn-no"></button> <button class="c2_btn-yes"></button> </footer>';
         }
 
